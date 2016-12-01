@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="播放/暂停"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="换图"/>
+        <Button
+            android:id="@+id/demon"
+            android:text="预解码"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.smart.gifview.GifView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:loop_play="true"
+        app:decode_type="sync_decode"
+        app:cache_size="2097152"
+        app:gif_src="@drawable/a"
+        app:auto_size="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

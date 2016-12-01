@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GifView">
+        <attr name="gif_src" format="reference" />
+        <attr name="cache_size" format="integer" />
+        <attr name="loop_count" format="integer" />
+        <attr name="loop_play" format="boolean" />
+        <attr name="auto_size" format="boolean" />
+
+        <attr name="decode_type" >
+            <enum name="wait_finish" value="0" />
+            <enum name="sync_decode" value="1" />
+            <enum name="cover" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
