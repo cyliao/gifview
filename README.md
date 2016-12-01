@@ -13,7 +13,7 @@
         app:loop_count="1"/>
 ~~~
 - cache_size : 缓存大小(byte)
-- gif_src : git图片
+- gif_src : gif图片
 - decode_type : 解码时的显示方式，wait_finish等待解码结束再播放，sync_decode边解码边播放，cover解码时显示第一帧，解码结束再播放
 - loop_play : 是否循环播放，默认true
 - loop_count : 播放次数
